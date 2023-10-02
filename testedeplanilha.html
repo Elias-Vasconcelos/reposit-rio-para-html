@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de formulario</title>
+</head>
+<body>
+    <h1>primeira tabela</h1>
+    <hr>
+    <form> 
+        <label for="nome"> coloque o nome</label>
+        <br>
+        <input id="nome" type="text" placeholder="nome completo">
+        <br>
+        <label for="email"> coloque o seu e-mail</label>
+        <br>
+        <input id="email" type="email" placeholder="Email para contato">
+        <br>
+        <label for="nascimento"> data de nascimento</label>
+        <br>
+        <input id="nascimento" type="date" placeholder="Data de nacimento">
+        <br>
+        <label for="tell"> telefone comercial</label>
+        <br>
+        <input type="tell" id="tell" placeholder="numero de celular">
+        <br>
+        <label for="experiencia"> selecione os seus anos de experiencia</label>
+        <br>
+        <input type="number" max="10" min="+0" id="experiencia" placeholder="anos de experiencia">
+        <br>
+        <label for="curriculo"> adicionre seu currriculo em PDF</label>
+        <input type="file" id="curriculo" > <!--não funciona placeholder aqui.-->
+        <br>
+    </form>
+    <hr>
+    <form action="8">
+        <fieldset>
+            <legend> selecione o seu perfil </legend>
+            <br>
+            <label for="conservador"> conservador</label>
+            <input id="conservador" type="checkbox">
+            <label for="moderado"> moderado</label>
+            <input id="moderado" type="checkbox">
+            <label for="arrojado"> arrojado</label>
+            <input id="arrojado" type="checkbox">
+            <!--neste tipo de check-box nao conseguimos usar a função "name"-->
+        </fieldset>
+    </form>    
+    <form action="8">
+        <fieldset>
+            <legend> selecione a frequncia de participação </legend>
+            <br>
+            <input name="selecione a frequencia de participação" type="radio" id="diario">
+            <label for="diario">diario</label>
+            <input name="selecione a frequencia de participação" type="radio" id="semanal">
+            <label for="semanal">semanal</label>
+            <input name="selecione a frequencia de participação" type="radio" id="mensal">
+            <label for="mensal">mensal</label>
+        </fieldset>
+        <hr>
+        <label for="investimento"> tipos de investimentos</label>
+        <select name="tipo de investimetos" id="onvestimentos">
+            <option>RENDA FIXA</option>
+            <option>RITOLO DA PREVIDENCIA</option>
+            <option>CDI</option>
+            <option>FUNDOS IMOBILIARIOS</option>
+            <option>AÇÕES</option>
+        </select>
+        <hr>
+        <label for="adicional">Quais sao seus okanos para os proximos anos?</label>
+        <br>
+        <textarea></textarea>
+        <br>
+        <button type="submit">enviar</button>
+        <br>
+        <button type="reset">apagar formulario</button>
+    </form>
+</body>
+</html>
